@@ -1,5 +1,4 @@
 let numeroSecreto = generarNumeroSecreto();
-console.log(numeroSecreto);
 
 function asignarTexoElemento(elemento, texto){
     let elementoHTML = document.querySelector(elemento);
@@ -7,8 +6,13 @@ function asignarTexoElemento(elemento, texto){
     return;
 }
 
-function intentoDeUsuario(){
-    alert('Hiciste click desde la funcion')
+function verificarIntento(){
+    let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
+    console.log(numeroSecreto);
+    console.log(typeof (numeroSecreto));
+    console.log(numeroDeUsuario);
+    console.log(typeof (numeroDeUsuario));
+    console.log(numeroDeUsuario === numeroSecreto);
     return;
 };
 
