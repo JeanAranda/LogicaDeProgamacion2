@@ -9,10 +9,13 @@ function asignarTexoElemento(elemento, texto){
 function verificarIntento(){
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
     console.log(numeroSecreto);
-    console.log(typeof (numeroSecreto));
-    console.log(numeroDeUsuario);
-    console.log(typeof (numeroDeUsuario));
-    console.log(numeroDeUsuario === numeroSecreto);
+    if (numeroDeUsuario === numeroSecreto){
+        asignarTexoElemento('p','Acertaste el numero');
+    }else if(numeroDeUsuario > numeroSecreto){
+        asignarTexoElemento('p', 'El numero secreto es menor');
+    }else {
+        asignarTexoElemento('p', 'El numero secreto es mayor')
+    }
     return;
 };
 
