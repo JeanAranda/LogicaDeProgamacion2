@@ -7,7 +7,10 @@ function asignarTexoElemento(elemento, texto){
     elementoHTML.innerHTML = texto;
     return;
 }
-
+/*
+Este codigo realiza 
+la comparación
+*/
 function verificarIntento(){
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
     if (numeroDeUsuario === numeroSecreto){
